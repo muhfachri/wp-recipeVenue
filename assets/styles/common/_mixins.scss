@@ -174,10 +174,10 @@
   background: linear-gradient($direction, $color-stops);
 }
 
-@mixin vertical-align($position: relative) {
+@mixin vertical-align($position: absolute, $top: 50%) {
   position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: $top;
+  -webkit-transform: translateY(-$top);
+  -ms-transform: translateY(-$top);
+  transform: translateY(-$top);
 }

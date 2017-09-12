@@ -54,4 +54,4 @@ namespace Roots\Sage\CustomPostTypes;
     register_post_type( 'cpt', $args );
 
 }
-add_action( 'init', __NAMESPACE__ . '\\cpt', 0 );*/
+add_action( 'init', __NAMESPACE__ . '\\cpt', 0 );

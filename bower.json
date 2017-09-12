@@ -8,13 +8,19 @@
   "private": true,
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.6",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "css-hamburgers": "^0.9.1"
   },
   "overrides": {
     "font-awesome": {
       "main": [
         "./scss/font-awesome.scss",
         "./fonts/*"
+      ]
+    },
+    "css-hamburgers" : {
+      "main": [
+        "./_sass/hamburgers/hamburgers.scss"
       ]
     }
   }

@@ -25,7 +25,6 @@
           $hamburger.toggleClass("is-active");
           // Do something else, like open/close menu
         });
-
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -35,6 +34,15 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            loop:true,
+            items: 1,
+            dots: false,
+            nav: false
+          });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

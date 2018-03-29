@@ -9,7 +9,8 @@
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
-    "css-hamburgers": "^0.9.1"
+    "css-hamburgers": "^0.9.1",
+    "owl.carousel": "^2.3.2"
   },
   "overrides": {
     "font-awesome": {
@@ -18,7 +19,7 @@
         "./fonts/*"
       ]
     },
-    "css-hamburgers" : {
+    "css-hamburgers": {
       "main": [
         "./_sass/hamburgers/hamburgers.scss"
       ]

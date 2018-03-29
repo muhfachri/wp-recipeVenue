@@ -3,13 +3,13 @@ namespace Roots\Sage\CustomPostTypes;
 
 // Register Custom Post Type
 
-/*function cpt() {
+function Cakes() {
 
     $labels = array(
-        'name'                  => _x( 'Custom Post Type', 'Post Type General Name', 'text_domain' ),
-        'singular_name'         => _x( 'Custom Post Type', 'Post Type Singular Name', 'text_domain' ),
-        'menu_name'             => __( 'Custom Post Type', 'text_domain' ),
-        'name_admin_bar'        => __( 'Custom Post Type', 'text_domain' ),
+        'name'                  => _x( 'Cakes', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Cake', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Cakes', 'text_domain' ),
+        'name_admin_bar'        => __( 'Cakes', 'text_domain' ),
         'archives'              => __( 'Item Archives', 'text_domain' ),
         'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
         'all_items'             => __( 'All Items', 'text_domain' ),
@@ -33,11 +33,11 @@ namespace Roots\Sage\CustomPostTypes;
         'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
     );
     $args = array(
-        'label'                 => __( 'Custom Post Type', 'text_domain' ),
-        'description'           => __( 'Custom Post Type', 'text_domain' ),
+        'label'                 => __( 'Cakes', 'text_domain' ),
+        'description'           => __( 'Cakes Post Type', 'text_domain' ),
         'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail' ),
-        'taxonomies'            => array(  ),
+        'taxonomies'            => array( 'variant' ),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -51,7 +51,31 @@ namespace Roots\Sage\CustomPostTypes;
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
     );
-    register_post_type( 'cpt', $args );
+    register_post_type( 'cakes', $args );
 
 }
-add_action( 'init', __NAMESPACE__ . '\\cpt', 0 );
+add_action( 'init', __NAMESPACE__ . '\\cakes', 0 );
+
+function Variants() {
+
+    $labels = array(
+        'name'                  => _x( 'Variants', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Variant', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Variants', 'text_domain' ),
+        'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+        'all_items'             => __( 'All Items', 'text_domain' ),
+        'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+        'edit_item'             => __( 'Edit Item', 'text_domain' ),
+        'update_item'           => __( 'Update Item', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Variants', 'text_domain' ),
+        'description'           => __( 'Variant Taxonomy', 'text_domain' ),
+        'labels'                => $labels,
+        'hierarchical'          => true,
+        'show_ui'               => true,
+    );
+    register_taxonomy( 'variants', 'cakes', $args );
+
+}
+add_action( 'init', __NAMESPACE__ . '\\variants', 0 );

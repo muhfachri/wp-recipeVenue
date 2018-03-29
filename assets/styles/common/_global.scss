@@ -1,1 +1,22 @@
+html, body {
+  min-height: 100%;
+}
+body {
+  font-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
 
+.full-width {
+  width: 100%;
+
+  @media (min-width: 300px) {
+    width: 10%;
+  }
+}
+
+.bg-img {
+  height: 290px;
+  background-position: center;
+  background-size: cover;
+}

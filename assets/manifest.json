@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/sos/"
+    "devUrl": "http://localhost/wp-recipeVenue/"
   }
 }

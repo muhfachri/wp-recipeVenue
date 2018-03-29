@@ -1,0 +1,91 @@
+.orange {
+    background-color: $color-orange;
+    font-style: italic;
+    color: $color-white;
+    width: 70%;
+    margin-top: 10px;
+
+  @media (min-width: 300px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 480px) {
+    margin: initial;
+    margin-top: 0px;
+    margin-left: 18px;
+    width: initial;
+  }
+
+  &:hover {
+    background-color: $color-light-orange;
+    color: $color-white;
+    transition: all .3s ease;
+  }
+}
+
+.btn-bahasa {
+    background-color: transparent;
+    border: 1px solid $color-dark-blue;
+    border-radius: 0;
+    width: 70%;
+    margin-top: 10px;
+
+  @media (min-width: 300px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 480px) {
+    margin: initial;
+    margin-left: 34px;
+    margin-top: 0px;
+    width: initial;
+  }
+
+  &:hover {
+    background-color: $color-dark-blue;
+    color: white;
+    transition: all .3s ease;
+  }
+}
+
+.cari {
+  background-color: $color-orange;
+  color: $color-white;
+  font-size: 22px;
+  width: 126px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-light-orange;
+    color: $color-white;
+    transition: all .3s ease;
+  }
+}
+
+.btn-resep {
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-style: italic;
+  padding: 2px 30px;
+  font-size: 14px;
+  transition: all .3s linear;
+
+  &:hover {
+    color: $color-white;
+    font-style: italic;
+    background-color: $color-dark-blue;
+    border: 0;
+  }
+}
+
+.btn-lihat {
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid $color-white;
+  font-style: italic;
+  color: $color-white;
+  font-size: 12px;
+  padding: 2px 28px;
+}

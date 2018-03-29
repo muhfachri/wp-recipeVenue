@@ -1,6 +1,6 @@
 // Search form
 .search-form {
-  @extend .form-inline;
+  //@extend .form-inline;
 }
 .search-form label {
   font-weight: normal;
@@ -12,4 +12,20 @@
 .search-form .search-submit {
   @extend .btn;
   @extend .btn-secondary;
+}
+
+.search-form {
+  input {
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+  }
+
+  select {
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+  }
 }
